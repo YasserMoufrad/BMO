@@ -1,0 +1,100 @@
+UMCP (CMSC131)
+Syllabus
+Schedule
+Office Hours
+Projects 
+Resources 
+CMSC131 (Spring 2024) - Object-Oriented Programming I
+Syllabus
+Introduction
+This is the first programming course for Computer Science majors with a focus on object-oriented programming. The goal of the course is to develop skills such as program design and testing as well as the implementation of programs using a graphical IDE. All programming will be done in Java.
+
+Prerequisites
+Corerequisite → Math140
+Credits → 4
+
+Coordinators
+Name	Office Number
+Pedram Sadeghian	IRB 2214
+Textbook
+No textbook is required. With the information we provide in class you should be fine (plus the web has lots of information about class concepts). If you would like to have a textbook, here is a recommendation: Absolute Java.
+
+Course Topics (Subject to Change)
+Intro to Computer Systems
+Programming Basics: Variables, Operators, Expressions, Statements, Methods
+Java Text Input/Output
+Conditionals
+Loops
+Principles of Object Oriented Programming
+Basics of Program Design
+Testing and Debugging
+Java Memory Map
+Arrays and Java ArrayLists
+Java interfaces
+Inheritance Overview
+Recursion
+Grading
+32%	Projects
+15%	Quizzes
+33%	Semester Exams (3), (10%, 11% and 12%)
+20%	Final Exam
+Once we have graded any class material (e.g., exams, projects, etc.) we will post an announcement and a deadline by which you must submit any regrade request (if necessary). It is your responsibility to submit regrade requests by the specified deadline; no regrade requests will be processed afterwards.
+
+Projects
+Deadlines - All projects are due at 11:30 pm on the specified day in the project description. You have until 11:30 pm of the next day to submit your project with a 12% penalty. Notice that after the late period, you will not receive any points for your project. For example, if a project is due on Wednesday at 11:30 pm, you have until Thursday at 11:30 pm to submit a late project with a 12% penalty. Any submission after Thursday 11:30 pm will receive 0 pts. Please do not send an email asking for an exception because you turned it in a "few minutes late". If the server says it is late or passed the deadline, that will be the time that will be used to calculate your grade.
+Submit Server - You need to use the submit server for project submissions. We will not accept projects submitted otherwise (e.g., e-mail, etc.). Notice that we use the submit server results to compute a significant portion of your project's grade. You need to make sure that your project works in the submit server, otherwise you will not get any credit. Even if it works on your local machine, log into the submit server and make sure it works in the server.
+Which Project Gets Graded - We will grade the project submission with the highest submit server score after the late penalty (if any) has been applied. As you can submit as often as you want, you might have more than one submission with the same high score. In that case, your last such submission will be used for grading by the TA. Your actual project grade recorded in the grade server may be lower than the submit server score if manual deductions are made by the grading TA. Please follow all rules from the start of the projects as the TAs will only grade the one submission downloaded by the server (as described above). In other words, you can not pick and choose what you want the TA to grade for the manual grading portion.
+Closed Projects - All programming assignments in this course are to be written individually (unless explicitly indicated otherwise). Cooperation between students, using old projects from former students, using the web to find code, or AI use to develop your code, are all violations of the Code of Academic Integrity. We take this very seriously and will report you to the Office of Student Conduct.
+Regarding Posting of Project Implementations
+Do not post your assignment's implementation online (e.g., GitHub, PasteBin) where they can be seen by others. Making your code accessible to others will lead to academic integrity violations.
+Posting of your projects in a private repository where only selected people (e.g., potential employers) can see them is OK. Just make sure that it is not a public site.
+Even if the course is over, do not make your code publicly available to others.
+We constantly monitor online sources. If you find it and use it in your project as your own code, we can find it too and report you.
+TA Office Hours
+Office hours get extremely busy the day before a project deadline. Therefore do not wait to start your projects. Regarding office hours:
+
+Once you have been helped by a TA, please allow the TA to move on to help another student. We have a large number of students in all of our classes and we need TAs to be available to address as many questions as possible.
+A TA can spend at most 10 minutes with a student.
+When you meet with a TA, please be ready to ask specific question(s). Just telling the TA that your code does not work is not a specific question. Remember, that it is ultimately YOUR responsibilty to debug your code. The TA will try to point you in the correct direction, but we can not guarantee that your issue will be fully resolved after meeting with a TA.
+Once you have been seen by a TA, you must leave the TA area. You can not stay around in the TA office hour space to continue to work on your project as we need the space for students that are currently being helped by a TA or waiting to be seen. TAs will be asked to report students that do not follow this rule.
+If you have a basic question, for example if you need clarification on the project requirement, just post in Piazza. Please allow us to reserve office hour time for students that have specific questions about the code they have written.
+Backups
+You need to keep backups of your projects as you develop them. No extensions will be granted because you accidentally erased your project or due to computer issues. Please make sure you have a backup computer/plan that will allow you to continue working on your projects if your primary computer becomes unavailable for any reason. Every term, I get emails from students asking for extensions because they had a computer issue. I am sorry this happens, but that is not a valid excuse for an extension. As a CS student, you need to get in the habit of backing up your work. Feel free to use the submit server as a backup tool by submitting often. You can also use tools like git, etc. Do not post code in any online system that is accessible to others (e.g., GitHub).
+
+Piazza
+We will be using (Piazza) for class communication. You will not be able to register in Piazza yourself. Your instructor will register you using the e-mail you have in the school system.
+
+Excused Absence
+See the section titled "Attendance and Missed Assignments" available at Course Related Policies.
+
+Even if you have a valid reason for missing a quiz or an exam, you still have to let me (not a TA) know BEFORE the time of the exam/quiz. I have no obligation to provide a makeup, even with a valid excuse, if you send me an email AFTER the exam/quiz. Simply put, if there is an issue, say something as soon as the issue comes up. Traffic issues, alarm clocks not going off, wrong date entered on your personal schedule are not valid excuses to miss a quiz/exam.
+
+As for a note from a physician, please provide one from the UHC or a local office, where you can get an actual signature by pen from the acutal medical professional who sees you in person. Notes provided by an online service that never see you in person will not be acceptable.
+
+Disability Support Accommodations
+See the section titled "Accessibility" available at Course Related Policies. If your ADS accommodation form allows for extra time on quizzes/exams, you need to schedule a time with the ADS office and I will have the quiz/exam available for you to take in the ADS office on the quiz/exam day. You need to schedule this AT LEAST ONE WEEK IN ADVANCE. If you do not sign up for a time according to their rules, you can not take it in the ADS office with extra time and I am NOT able to give you extra time in the regular 50 minute classroom session. All temporary dates are already on the schedule, so there is no reason to delay reserving your time. Do it TODAY!
+
+Academic Integrity
+Note that academic dishonesty includes not only cheating, fabrication, and plagiarism, but also includes helping other students commit acts of academic dishonesty by allowing them to obtain copies of your work. In short, all submitted work must be your own. Cases of academic dishonesty will be pursued to the fullest extent possible as stipulated by the Office of Student Conduct.
+
+The CS Department takes academic integrity seriously. Information on how the CS Department views and handle academic integrity matters can be found at Academic Integrity.
+
+The following are examples of academic integrity violations:
+
+Hardcoding of results in a project assignment. Hardcoding refers to attempting to make a program appear as if it works correctly (e.g., printing expected results for a test).
+Using any code available on the internet/web or any other source. For example, using code from Sourceforge, Stack Overflow, etc.
+Hiring any online service to complete an assignment for you. For example, using Chegg to complete an assignment is not allowed.
+Sharing your code or your student tests with any student.
+Using online forums (other than Piazza) in order to ask for help regarding our assignments.
+Using any type of AI tool to create code for you.
+Additional information can be found in the sections titled "Academic Integrity" and "Student Conduct" available at Course Related Policies.
+
+Miscellaneous
+As you work on a project, submit your project often even if you have not finished. We monitor submit server submissions and can provide assistance based on submit server results.
+At the end of the semester visit (www.courseevalum.umd.edu) to complete your course evaluations.
+Contact the Counseling Center if you are experiencing difficulties that affect your performance in your courses.
+UMD Course related policies can be found at http://www.ugst.umd.edu/courserelatedpolicies.html
+Copyright
+All course materials are copyright UMCP, Department of Computer Science © 2024. All rights reserved. Students are permitted to use course materials for their own personal use only. Course materials may not be distributed publicly or provided to others (excepting other students in the course), in any way or format.
+
+Web Accessibility
