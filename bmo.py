@@ -1,19 +1,9 @@
+import google.genai as genai
 import json
-import pdfplumber
-import re
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-all_assignments = [
-    {"name": "Essay", "grade_weight": 40, "due_date": "January 5", "completed": False},
-    {"name": "Project", "grade_weight": 30, "due_date": "January 10", "completed": False},
-    {"name": "Midterm", "grade_weight": 75, "due_date": "January 16", "completed": False},
-    {"name": "Group Project", "grade_weight": 20, "due_date": "January 30", "completed": False},
-    {"name": "Final Exam", "grade_weight": 100, "due_date": "February 17", "completed": False},
-]
-
-
-def display_assignments(all_assignments):
-    for assignment in all_assignments:
-        print("You have,", assignment["name"],"which is worth", assignment["grade_weight"], "points, due on", assignment["due_date"] )
 
 def find_heaviest(all_assignments):
     heaviest = all_assignments[0]
@@ -31,19 +21,37 @@ def extract_text(filename):
         text = file.read()
         return text
 
-def find_grade_weights(text):
-    return re.findall(r"\d+%", text)
+def gemini(text):
+    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+    prompt = """You are a syllabus parser for a student productivity app. Your job is to extract every gradeable item from the syllabus provided, even if the information is incomplete.
 
-   
+Return a JSON list of dictionaries in exactly this format:
+[{"name": "Essay", "grade_weight": 40, "due_date": "January 5", "completed": false}]
+
+Rules:
+- Extract every assignment, exam, project, quiz, or gradeable category you find
+- grade_weight must be an integer representing percentage. If you find 32% write 32
+- If a due date exists write it exactly as it appears. If no due date is found write null
+- If a grade weight exists write it as an integer. If no grade weight is found write null
+- completed is always false
+- If you find a category like Projects worth 32% with no specific due date, still include it with null for due_date
+- Make reasonable inferences about assignment names from context but flag nothing — just include everything you find
+- Return only the raw JSON list, nothing else
+- No explanation, no markdown, no code blocks, no extra text before or after the JSON"""
+    contents = prompt + "\n\nSYLLABUS TEXT:\n" + text
+    response = client.models.generate_content(
+        model="gemini-2.5-flash",
+        contents=contents
+    )
+    print(response.text)
+    return response.text
+    
 
 
 
-display_assignments(all_assignments)
-result = find_heaviest(all_assignments)
-save_assignments(all_assignments)
-print("BMO Warning:", result["name"], "is your heaviest assignment at", result["grade_weight"], "points")
-extract_text("CMSC131syllabus.pdf")
+
 
 text = extract_text("CMSC131syllabus.pdf")
-weights = find_grade_weights(text)
-print(weights)
+result = gemini(text)
+assignments_from_syllabus = json.loads(result)
+print(assignments_from_syllabus)
