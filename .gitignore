@@ -1,6 +1,4 @@
-__pycache__/
-*.pyc
+venv/
 .env
 *.json
-*.pdf
-*.txt
+__pycache__/
